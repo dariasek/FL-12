@@ -1,0 +1,192 @@
+.header_heading, body main .section_text, body main .section_card .section_card_right_container .section_card_heading {
+  font-family: "Source Sans Pro", sans-serif; }
+
+.header_button, body main .section_banner .section_banner_button {
+  background-color: #679704;
+  border: none;
+  padding: 7px 26px;
+  border-radius: 3px;
+  color: white;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 12px;
+  font-weight: 600; }
+
+body {
+  background-color: white;
+  font-family: "Hind", sans-serif;
+  font-size: x-small; }
+  body header {
+    background: url(../img/m-h-day.jpg) center no-repeat;
+    background-position: cover;
+    color: #2c2f3c;
+    padding-left: 60px;
+    padding-bottom: 120px;
+    border-bottom-right-radius: 500px 150px;
+    position: relative;
+    z-index: -2; }
+    body header .landing-logo {
+      display: flex;
+      padding-top: 10px;
+      display: flex;
+      padding-left: 40px; }
+      body header .landing-logo p {
+        padding-left: 5px;
+        margin-top: 1px;
+        font-family: "Hind", sans-serif;
+        font-weight: 900;
+        font-stretch: narrower;
+        font-size: 14px; }
+        body header .landing-logo p span {
+          display: block;
+          font-size: 7px;
+          text-align: center; }
+      body header .landing-logo img {
+        width: 30px;
+        height: 30px; }
+    body header .header_heading, body header main .section_text, body main header .section_text, body header main .section_card .section_card_right_container .section_card_heading, body main .section_card .section_card_right_container header .section_card_heading {
+      font-weight: 900;
+      font-size: 50px;
+      display: block;
+      max-width: 500px;
+      padding-left: 40px;
+      margin-bottom: 0px;
+      line-height: 1; }
+      body header .header_heading::after, body header main .section_text::after, body main header .section_text::after, body header main .section_card .section_card_right_container .section_card_heading::after, body main .section_card .section_card_right_container header .section_card_heading::after {
+        content: "";
+        background-color: #14a0c7;
+        position: absolute;
+        top: 165px;
+        left: 100px;
+        height: 37px;
+        width: 210px;
+        z-index: -1; }
+    body header .header_text {
+      white-space: pre;
+      margin-left: 0;
+      font-size: 12px; }
+    body header .login {
+      padding-left: 80px;
+      color: white;
+      font-size: 14px;
+      font-family: "Source Sans Pro", sans-serif; }
+    body header div button {
+      margin-left: 40px;
+      margin-top: 20px; }
+  body main .section_text {
+    text-align: center;
+    color: #21232e;
+    font-size: 27px;
+    font-weight: 600; }
+    body main .section_text::after {
+      content: "";
+      background-color: #14a0c7;
+      position: absolute;
+      top: 549px;
+      left: 635px;
+      height: 30px;
+      width: 123px;
+      z-index: -1; }
+  body main .section_card {
+    display: flex;
+    align-items: center;
+    width: 55%;
+    background-color: #21232e;
+    border-width: 12px;
+    border-style: solid;
+    border-color: #21232e;
+    margin-bottom: 14px;
+    margin-left: 23%;
+    color: white;
+    border-radius: 4px; }
+    body main .section_card img {
+      border-radius: 4px; }
+    body main .section_card .section_card_right_container {
+      margin-left: 9%; }
+      body main .section_card .section_card_right_container .section_card_heading {
+        margin-top: 0px;
+        text-align: center;
+        font-size: 15px;
+        font-weight: 550;
+        font-stretch: narrower; }
+      body main .section_card .section_card_right_container .section_card_text {
+        text-align: justify;
+        display: flex;
+        align-items: center;
+        max-width: 320px;
+        line-height: 16px;
+        color: #c0c3c4; }
+      body main .section_card .section_card_right_container a {
+        color: #c0c3c4;
+        display: block;
+        text-align: center; }
+  body main .section_banner {
+    margin-top: 100px;
+    margin-left: 21%;
+    margin-bottom: -105px;
+    position: relative;
+    display: flex;
+    block-size: auto;
+    background: linear-gradient(45deg, #679704, #2d5bd7);
+    align-items: center;
+    max-width: 63%;
+    border-radius: 4px;
+    position: relative;
+    z-index: -2; }
+    body main .section_banner .section_banner_text_wrap {
+      margin-left: 100px; }
+      body main .section_banner .section_banner_text_wrap .section_banner_heading {
+        padding-top: 3px;
+        font-weight: 650;
+        font-family: "Source Sans Pro", sans-serif;
+        font-size: 19px;
+        color: #21232e; }
+        body main .section_banner .section_banner_text_wrap .section_banner_heading::after {
+          content: "";
+          background-color: #14a0c7;
+          position: absolute;
+          top: 17px;
+          left: 177px;
+          height: 30px;
+          width: 40px;
+          z-index: -1; }
+      body main .section_banner .section_banner_text_wrap .section_banner_text {
+        color: #c0c3c4;
+        padding-bottom: 20px; }
+    body main .section_banner .section_banner_button {
+      margin-left: 220px; }
+
+footer {
+  padding-top: 50px;
+  position: relative;
+  z-index: -3; }
+  footer .footer-wrap {
+    color: #c0c3c4;
+    background: #21232e;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 80px; }
+    footer .footer-wrap .footer_logo {
+      display: flex;
+      margin-left: 90px; }
+      footer .footer-wrap .footer_logo p {
+        padding-left: 5px;
+        margin-top: 1px;
+        font-family: "Hind", sans-serif;
+        font-weight: 900;
+        font-stretch: narrower;
+        font-size: 14px; }
+        footer .footer-wrap .footer_logo p span {
+          display: block;
+          font-size: 7px;
+          text-align: center; }
+      footer .footer-wrap .footer_logo img {
+        width: 30px;
+        height: 30px; }
+    footer .footer-wrap .footer_text {
+      margin-right: 25%;
+      margin-left: 25%;
+      margin-bottom: 30px;
+      text-align: justify;
+      width: 220px; }
+    footer .footer-wrap .footer-cr {
+      margin-right: 100px; }

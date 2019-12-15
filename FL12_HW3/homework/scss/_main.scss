@@ -1,0 +1,273 @@
+@mixin landLogo() {
+    display: flex;
+    p {
+        padding-left: 5px;
+        margin-top: 1px;
+        font-family: $fontAll;
+        font-weight: 900;
+        font-stretch: narrower;
+        font-size: 14px;
+
+        span{
+            display: block;
+            font-size: 7px;
+            text-align: center;
+        }
+    }
+
+    img{
+        width: 30px;
+        height: 30px;
+    }
+   
+}
+
+@mixin adventure() {
+    content:"";
+    background-color: $bgColorT;
+    position: absolute;
+    top: $advTop;
+    left: $advLeft;
+    height: $advH;
+    width: $advW;
+    z-index: -1;
+    
+}
+
+
+$fh:'Source Sans Pro', sans-serif;
+
+$myFonts:(
+    headerFont: $fh
+
+);
+
+
+.header_heading{
+    font-family: map-get($map: $myFonts, $key: headerFont);
+
+}
+
+.header_button{
+    background-color: $buttonColor;
+    border: none;
+    padding: 7px 26px;
+    border-radius: 3px;
+    color: white;
+    font-family: map-get($map: $myFonts, $key: headerFont) ;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+body{
+
+    background-color: $mainColorBg;
+    font-family: $fontAll;
+    font-size: x-small;
+
+    header{
+        background: $bg-image center no-repeat;
+        background-position: cover;
+        color: $color-text;
+        padding-left: 60px;
+        padding-bottom: 120px;
+        border-bottom-right-radius:500px 150px;
+        position: relative;
+        z-index: -2;
+
+        .landing-logo{
+            @include landLogo();
+            padding-top: 10px;
+            display: flex;
+            padding-left: 40px; 
+               
+        
+        }
+        
+        .header_heading{
+            font-weight: 900;
+            font-size: 50px;
+            display: block;
+            max-width: 500px;
+            padding-left: 40px;
+            margin-bottom: 0px;
+            line-height: 1;
+
+            &::after{
+                content:"";
+                background-color: $bgColorT;
+                position: absolute;
+                top: 165px;
+                left: 100px;
+                height: 37px;
+                width: 210px;
+                z-index: -1;
+            }
+        }
+
+        .header_text{
+            white-space: pre;
+            margin-left:0;
+            font-size: 12px;
+        }
+
+
+
+        .login{
+            padding-left: 80px;
+            color: white;
+            font-size: 14px;
+            font-family: map-get($map: $myFonts, $key: headerFont);
+
+        }
+
+        div{
+            button{
+                margin-left: 40px;
+                margin-top: 20px;
+            }
+        }
+    }
+
+    main{
+
+        .section_text{
+            text-align: center;
+            color: $colorSectionText;
+            @extend .header_heading;
+            font-size: 27px;
+            font-weight: 600;
+
+            &::after{
+                
+                @include adventure();
+            }
+        }
+
+        .section_card{
+            display: flex;
+            align-items: center;
+            width: 55%;
+            background-color: $bgSection;
+            border-width: 12px;
+            border-style: solid;
+            border-color: $bgSection;
+            margin-bottom: 14px;
+            margin-left: 23%;
+            color: white;
+            border-radius: 4px;
+
+            img{
+                border-radius: 4px;
+            }
+
+            .section_card_right_container{
+
+                margin-left: 9%;
+                .section_card_heading{
+                    margin-top: 0px;
+                    text-align: center;
+                    @extend .header_heading;
+                    font-size: 15px;
+                    font-weight: 550;
+                    font-stretch: narrower;;
+                }
+                .section_card_text{
+                    text-align: justify;
+                    display: flex;
+                    align-items: center;
+                    max-width: 320px;
+                    line-height: 16px;
+                    color: #c0c3c4;
+                }
+
+                a{
+                   color: #c0c3c4;
+                   display: block;
+                   text-align: center;
+                }
+            } 
+        }
+
+        .section_banner{
+            margin-top: 100px;
+            margin-left: 21%;
+            margin-bottom: -105px;
+            position: relative;
+            display: flex;
+            block-size: auto;
+            background: $bgColorBanner;
+            align-items: center;
+            max-width: 63%;
+            border-radius: 4px;
+            position: relative;
+            z-index: -2;
+
+            .section_banner_text_wrap{
+                margin-left: 100px;
+                .section_banner_heading{
+                    padding-top: 3px;
+                    font-weight: 650;
+                    font-family:map-get($map: $myFonts, $key: headerFont);
+                    font-size: 19px;
+                    color: $bannerCol;
+                    
+                    
+                    &::after{
+                        content:"";
+                        background-color: $bgColorT;
+                        position: absolute;
+                        top: 17px;
+                        left: 177px;
+                        height: 30px;
+                        width: 40px;
+                        z-index: -1;
+                    }
+                }
+
+                .section_banner_text{ 
+                    color: $bannerTextCol;
+                    padding-bottom: 20px;
+
+                }
+            }
+
+            .section_banner_button{
+                @extend .header_button;
+                margin-left: 220px;
+                
+            }
+        }
+        
+    }
+}
+footer{
+    padding-top: 50px;
+    position: relative;
+    z-index: -3;
+    .footer-wrap{
+        color:#c0c3c4;;
+        background: $bgSection;
+        display: flex;
+        justify-content: space-around;
+        padding-top: 80px;
+        
+
+        .footer_logo{
+            @include landLogo();
+            margin-left: 90px;
+            
+        }
+        .footer_text{
+            margin-right:25%;
+            margin-left:25%;
+            margin-bottom:30px;
+            text-align: justify;
+            width: 220px;
+        }
+        
+        .footer-cr{
+            margin-right: 100px;
+        }
+    }
+}
