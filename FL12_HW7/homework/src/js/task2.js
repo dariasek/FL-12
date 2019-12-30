@@ -81,7 +81,7 @@ if (firstConfirm === false){
                 }
             }
         }
-        totalPrize += prize;
+        totalPrize = prize + prizeNested;
         alert('Thank you for your participation.\nYour prize is: '+totalPrize+'$');
         lastConfirm = confirm('Do you want to continue');
     }
