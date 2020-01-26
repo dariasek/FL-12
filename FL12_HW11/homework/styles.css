@@ -1,0 +1,16 @@
+.clicked{
+    display: none;
+}
+
+.it{
+    font-style: italic;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li:hover{
+    background-color: darkgray;
+    opacity: 50%;
+}
